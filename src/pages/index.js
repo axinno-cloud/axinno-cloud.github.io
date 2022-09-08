@@ -29,7 +29,7 @@ export default IndexPage
 export function Head() {
     return (
         <>
-            <title>Cloudstream</title>
+            <title>InnoFlix</title>
             <meta property="og:title" content="InnoFlix" />
             <meta property="og:description" content="InnoFlix is an Android app for streaming and downloading Movies, TV-Series and Anime." />
             <meta property="og:image" content={bgImage} />

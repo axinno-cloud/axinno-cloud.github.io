@@ -10,7 +10,7 @@ const IndexPage = () => {
     const [repos, setRepos] = useState([]);
     
     useEffect(() => {
-        fetch("https://raw.githubusercontent.com/recloudstream/cs-repos/master/repos-db.json")
+        fetch("https://raw.githubusercontent.com/amorabda/cs-repos/master/repos-db.json")
             .then(r => r.json())
             .then(data => {
                 setRepos(data)

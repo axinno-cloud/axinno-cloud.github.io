@@ -31,29 +31,7 @@ function ChildrenNodes({nodes, parent}) {
 const Drawer = () => (
     <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/repos">Repositories</Link></li>
-        <div className="divider">Docs</div>
-        <li><a href="/dokka/">Dokka</a></li>
-        <li><Link to="/docs">Documentation</Link></li>
-        <StaticQuery
-            query={graphql`
-                query {
-                    allMarkdownRemark(sort: {fields: frontmatter___order}) {
-                        nodes {
-                        frontmatter {
-                            title
-                            order
-                            parent
-                        }
-                        fileAbsolutePath
-                        }
-                    }
-                }
-            `}
-            render={data => (
-                <ChildrenNodes nodes={Array.from(data.allMarkdownRemark.nodes)} parent={null} />
-            )}
-        />
+        <li><Link to="/repos">Repositories</Link></li
     </ul>)
 
 export default Drawer

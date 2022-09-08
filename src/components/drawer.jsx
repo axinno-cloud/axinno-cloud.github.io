@@ -31,7 +31,7 @@ function ChildrenNodes({nodes, parent}) {
 const Drawer = () => (
     <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/repos">Repositories</Link></li
+        <li><Link to="/repos">Repositories</Link></li>
     </ul>)
 
 export default Drawer

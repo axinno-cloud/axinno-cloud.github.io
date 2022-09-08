@@ -20,17 +20,12 @@ const Navbar = () => (
         <div className="flex navbar-center items-center gap-2">
             <Link className="flex flex-0 btn btn-ghost gap-4 text-base-content" to="/">
                 <img src={logo} alt="Logo" className="object-contain h-12 w-12" />
-                <span className="hidden md:inline">Cloudstream</span>
+                <span className="hidden md:inline">Axinno</span>
             </Link>
         </div>
         <div className="flex flex-0 navbar-end text-base-content">
-            <Button name="Matrix" url="https://matrix.to/#/#lagrapps:matrix.org">
-                <SiMatrix />
-            </Button>
-            <Button name="Discord" url="https://discord.gg/5Hus6fM">
-                <FaDiscord />
-            </Button>
-            <Button name="GitHub" url="https://github.com/recloudstream/">
+            
+            <Button name="GitHub" url="https://github.com/amorabda/">
                 <FaGithub />
             </Button>
         </div>

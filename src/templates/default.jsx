@@ -79,7 +79,7 @@ export default function PageTemplate({ data: { markdownRemark, allMarkdownRemark
            <div className="flex-none">
              <a 
                 className="btn btn-primary btn-sm"
-                href={`https://github.com/recloudstream/recloudstream.github.io/blob/master/src/pages${node2slug(markdownRemark)}`}
+                href={`https://github.com/amorabda/amorabda.github.io/blob/master/src/pages${node2slug(markdownRemark)}`}
                 target="_blank">Edit</a>
            </div>
         </div>

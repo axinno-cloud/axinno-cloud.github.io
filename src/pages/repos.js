@@ -18,7 +18,12 @@ const IndexPage = () => {
     }, [setRepos])
 
     return <Layout>
-        
+        <div className="flex items-center w-full flex-col">
+          
+            {repos &&
+                repos.map((it, index) => <RepoCard url={it} key={index} isFirst={index===0}/>)
+            }
+        </div>
     </Layout>
 
 }

@@ -23,7 +23,9 @@ const Navbar = () => (
                 <span className="hidden md:inline">InnoFlix</span>
             </Link>
         </div>
-       
+        <div className="flex flex-0 navbar-end text-base-content">
+            
+        </div>
     </nav>
 </div>
 )

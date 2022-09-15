@@ -13,9 +13,9 @@ const IndexPage = () => {
         <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
             <p className="mb-5 text-lg">InnoFlix is an Android app for streaming and downloading Movies, TV-Series and Anime.</p>
             <div className="flex justify-center w-full mb-5">
-                <CompatBtn autoFocus={true} className="btn-primary" href="/install">Install</CompatBtn>
+                <CompatBtn autoFocus={true} className="btn-bg-emerald-400 hover:bg-emerald-500 text-white font-bold py-2 px-4 rounded-full" href="/install">Install</CompatBtn>
                 <div className="divider divider-horizontal" />
-                <CompatBtn className="btn-primary" href="/repos">Repositories</CompatBtn>
+                <CompatBtn className="btn-bg-emerald-400 hover:bg-emerald-500 text-white font-bold py-2 px-4 rounded-full" href="/repos">Repositories</CompatBtn>
             </div>
          
         </Hero>

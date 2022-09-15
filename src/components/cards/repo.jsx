@@ -34,17 +34,8 @@ const RepoCard = ({ url, isFirst }) => {
                         >Install</CompatBtn>
                     <CompatBtn group={true} 
                         onClick={() => {
-                            if (navigator.clipboard) {
-                                navigator.clipboard.writeText(url);
-                            } else {
-                                var tempInput = document.createElement("input");
-                                tempInput.value = url;
-                                document.body.appendChild(tempInput);
-                                tempInput.select();
-                                document.execCommand("copy");
-                                document.body.removeChild(tempInput);
-                            }
-                    }}>Copy URL</CompatBtn>
+                            
+                    }}></CompatBtn>
                 </div>
             </div>
         </div>

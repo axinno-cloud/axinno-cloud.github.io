@@ -10,7 +10,7 @@ const InstallPage = () => {
     const [data, setData] = useState(null)
 
     useEffect(() => {
-        fetch("https://api.github.com/repos/amorabda/cloudstream/releases")
+        fetch("https://api.github.com/repos/InnoFlix/cloudstream/releases")
             .then(r => r.json())
             .then(r => {
                 let btns = []
@@ -58,7 +58,7 @@ const InstallPage = () => {
                     data.btns.map((it, idx) => {
                         return <div className="btn-group" key={JSON.stringify(it)}>
                             <CompatBtn group={true} autoFocus={idx === 0}
-                                className={it.pre?'btn-secondary':'btn-primary'}
+                                className={it.pre?'btn-secondary':'bg-emerald-400 hover:bg-emerald-500 text-white font-bold py-2 px-4 rounded-full'}
                                 href={it.apk.browser_download_url}
                                 target="_blank">Download {it.tag}</CompatBtn>
                             <CompatBtn
@@ -70,7 +70,7 @@ const InstallPage = () => {
                 </div>
             }
             {(data == null) &&
-                <a href="https://github.com/amorabda/cloudstream/releases/download/pre-release/app-prerelease.apk" className="btn btn-primary">Download pre-release</a>
+                <a href="https://github.com/amorabda/InnoFlix/releases/download/pre-release/app-prerelease.apk" className="btn bg-emerald-400 hover:bg-emerald-500 text-white font-bold py-2 px-4 rounded-full">Download pre-release</a>
             }
         </Hero>
     </Layout>

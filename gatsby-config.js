@@ -23,7 +23,7 @@ module.exports = {
         ]
       }
     },
-    { resolve: 'gatsby-plugin-html-attributes', options: { lang: 'en', 'data-theme': 'night' } },
+    { resolve: 'gatsby-plugin-html-attributes', options: { lang: 'en', 'data-theme': 'dark' } },
     { resolve: 'gatsby-plugin-nprogress', options: { color: '#4ECCA3' } },
     { resolve: 'gatsby-plugin-manifest', options: require("./manifest") },
     { resolve: 'gatsby-plugin-canonical-urls', options: { siteUrl: require("./metadata").siteUrl } },

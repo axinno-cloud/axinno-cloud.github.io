@@ -17,7 +17,7 @@ const RepoCard = ({ url, isFirst }) => {
         return <progress className="progress progress-primary w-full mx-10 md:w-2/3 mb-5"></progress>
     }
 
-    return <article className="card bg-base-200 shadow-xl w-full mx-10 md:w-2/3 mb-5">
+    return <article className="card bg-neutral-content shadow-xl w-full mx-10 md:w-2/3 mb-5">
         <div className="card-body">
             <h2 className="card-title">{data.name || "Unnamed"}</h2>
             <p>
@@ -28,7 +28,7 @@ const RepoCard = ({ url, isFirst }) => {
                     <CompatBtn
                         autoFocus={isFirst}
                         group={true}
-                        className="btn-primary"
+                        className="btn-bg-emerald-400 hover:bg-emerald-500 text-white font-bold py-2 px-4 rounded-full"
                         href={`cloudstreamrepo://${url.replace(/^https?:\/\//, "")}`}
                         target="_blank"
                         >Install</CompatBtn>

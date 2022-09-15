@@ -7,7 +7,7 @@ const Footer = () => (
             <a class="link link-hover" onClick={() => {window.open("https://www.youtube.com/channel/UCZbbj-dZKkxAXBxNBHJSJ2A")}}>YouTube</a>
         </div>
         <div>
-            <p>Website by <a className="link" href="https://github.com/amorabda" target="_blank">Axinno</a></p>
+            <p>Website by <a className="link" href="https://axinno.net/" target="_blank">Axinno</a></p>
         </div>
     </footer>)
 

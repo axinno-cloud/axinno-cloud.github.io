@@ -10,7 +10,7 @@ const InstallPage = () => {
     const [data, setData] = useState(null)
 
     useEffect(() => {
-        fetch("https://api.github.com/repos/InnoFlix/cloudstream/releases")
+        fetch("https://api.github.com/repos/amorabda/InnoFlix/releases")
             .then(r => r.json())
             .then(r => {
                 let btns = []

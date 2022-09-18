@@ -14,10 +14,7 @@ const Navbar = () => (
             
         </div>
         <div className="flex navbar-center items-center gap-2">
-            <Link className="flex flex-0 btn btn-ghost gap-4 text-base-content" to="/repos">
-                <img src={logo} alt="Logo" className="object-contain h-12 w-24" />
-                <span className="hidden md:inline">InnoFlix</span>
-            </Link>
+            
         </div>
         <div className="flex flex-0 navbar-end text-base-content">
             
